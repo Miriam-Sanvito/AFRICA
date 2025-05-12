@@ -146,15 +146,119 @@ body {
   
   /* ! poster */
   
-  .poster{
-      display:flex;
-      height: 100vh;
-      width: 100%; 
-      align-items: center;
+  .poster {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
   }
-  .poster__img{width: 65%;height: 100%;}
-  .poster__img img{object-fit: cover;width: 100%;height: 100%;}
-  .poster__content{width: 35%;padding: 50px;}
+  
+  /* Immagine */
+  .poster__img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .poster__img-box {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+  }
+  
+  .poster__img-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .poster__img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* Contenuto */
+  .poster {
+    display: flex;
+    flex-direction: row; /* 👉 imposta layout orizzontale */
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: nowrap; /* 👉 evita che vadano sotto */
+  }
+  
+  /* Colonna sinistra: testo */
+  .poster__content {
+    width: 50%;
+    padding: 40px;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeSlideInLeft 1s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  /* Colonna destra: immagine */
+  .poster__img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeSlideInRight 1s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .poster__img-box {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+  }
+  
+  .poster__img-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .poster__img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* Animazioni */
+  @keyframes fadeSlideInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeSlideInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
   
   
   
@@ -205,6 +309,9 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    border: 10px solid darkgoldenrod;
+    border-radius: 15px;
+    background-color: yellowgreen;
   }
   
   .goals-title {
