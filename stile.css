@@ -54,7 +54,7 @@ p {
     padding: 20px;
     background-image: url('savana.jpg'); /* puoi cambiarla se vuoi un altro sfondo */
     display: flex;
-    max-width: 1350px;
+
     z-index: 100;
 }
 

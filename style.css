@@ -46,7 +46,6 @@ body {
       padding: 20px;
       background-image: url('savana.jpg');
       display: flex;
-      max-width: 1350px;
       z-index: 100;
       
   }
@@ -145,50 +144,7 @@ body {
   .hero__content p{color: #fff;}
   
   /* ! poster */
-  
-  .poster {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    color: #fff;
-    gap: 40px;
-    padding: 40px;
-    flex-wrap: wrap;
-  }
-  
-  /* Immagine */
-  .poster__img {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: fadeSlideIn 1s ease-out forwards;
-    animation-delay: 0.2s;
-  }
-  
-  .poster__img-box {
-    width: 80%;
-    max-width: 500px;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-    transition: transform 0.4s ease;
-  }
-  
-  .poster__img-box:hover {
-    transform: scale(1.05);
-  }
-  
-  .poster__img-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-  
+
   /* Contenuto */
   .poster {
     display: flex;
@@ -239,7 +195,7 @@ body {
   }
   
   .poster__img-box img {
-    width: 100%;
+    width: 120%;
     height: auto;
     display: block;
     object-fit: cover;
@@ -284,22 +240,31 @@ body {
     flex: 1 1 50%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 40px;
   }
   
   .goals-image-box {
-    width: 100%;
+    width: 80%;
     max-width: 600px;
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+    margin-top: 25px;
+
   }
   
   .goals-image {
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  
+  .goals-image-box:hover {
+    transform: scale(1.05);
   }
   
   .goals-content {
@@ -309,9 +274,8 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    border: 10px solid darkgoldenrod;
     border-radius: 15px;
-    background-color: yellowgreen;
+  
   }
   
   .goals-title {
@@ -321,7 +285,7 @@ body {
   }
   
   .goal-block {
-    margin-bottom: 20px;
+    margin-bottom: px;
   }
   
   .goal-subtitle {
@@ -334,6 +298,14 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color: black;
+  }
+
+  .goal-text-box{
+      border: 4px solid darkgoldenrod;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #fdfbe9; /* Colore di sfondo tenue */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Leggera ombra */
   }
   
   /* Responsive */
@@ -366,6 +338,57 @@ body {
       .grid{flex-wrap:wrap;}
   }
   
+  /* bioma */
+  .biomi-container {
+    text-align: center; /* Centra tutto il contenuto */
+    padding: 60px 20px; /* Padding intorno per dare un po' di spazio */
+    background-color: #f4f4f9; /* Colore di sfondo chiaro */
+    border-radius: 20px; /* Bordo arrotondato per un look più morbido */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra sottile per profondità */
+    max-width: 800px; /* Limita la larghezza del contenitore */
+    margin: 0 auto; /* Centra il contenitore orizzontalmente */
+  }
+  
+  .biomi-title h3 {
+    font-size: 2.5em; /* Grandezza del titolo */
+    font-weight: bold; /* Grassetto per il titolo */
+    color: #3a3a3a; /* Colore del testo del titolo */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    letter-spacing: 2px; /* Distanza tra le lettere */
+    margin-bottom: 20px; /* Distanza sotto il titolo */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .biomi-description p {
+    font-size: 1.2em; /* Testo un po' più grande per una lettura più facile */
+    color: #666; /* Colore del testo descrittivo */
+    line-height: 1.8; /* Aumenta la distanza tra le righe */
+    margin: 0 0 20px 0; /* Distanza inferiore al paragrafo */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Effetto hover per il titolo */
+  .biomi-title h3:hover {
+    color: #0077ff; /* Cambia il colore al passaggio del mouse */
+    cursor: pointer; /* Cambia il cursore */
+    transition: color 0.3s ease; /* Aggiunge una transizione dolce */
+  }
+  
+  /* Animazione per la descrizione */
+  .biomi-description p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards; /* Animazione di entrata */
+    animation-delay: 0.5s;
+  }
+  
+  /* Keyframes per l'animazione */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
   
   /* ! carousel*/
@@ -387,8 +410,7 @@ body {
 
 }
   .carousel-cell:hover {
-    transform: scale(1.1) translateY(-10px);
-    background-color: #4caf50;
+    transform: scale(1.2) ;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   }
   
