@@ -45,47 +45,62 @@ p {
 
 
 
-.header{
-     
+.header {
     width: 100%;
     position: fixed;
-    top:0;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     padding: 20px;
-    background-color: crimson;
+    background-image: url('savana.jpg'); /* puoi cambiarla se vuoi un altro sfondo */
     display: flex;
-    max-width: 1350;
+    max-width: 1350px;
     z-index: 100;
-    
 }
 
 .logo {
-    flex-shrink: 0; 
+    flex-shrink: 0; /* Impedisce al logo di ridursi */
     display: flex;
     align-items: center;
     margin-right: 30px;
+    /* border: 2px solid black; */
 }
 
-.menu{
-      
-    width: 100%;  
-}
-.menu li{display: inline-block}
-.menu li a{color:white;padding: 15px;display: block;}
-.hamburger {
-    display: none;
+.menu {
+    width: 100%;
 }
 
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    color: white;
+    padding: 15px;
+    display: block;
+}
+
+.cta .button {
+    padding: 18px 28px;
+    background: #316bff;
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+    .cta {
+        display: none;
+    }
+
     .menu {
         position: absolute;
         top: 0;
         right: -100%;
-        background-color: #333;
+        background-color: black;
         height: 100vh;
         padding-top: 80px;
-        flex-direction: column;
     }
 
     .menu li {
@@ -109,6 +124,7 @@ p {
         margin-bottom: 5px;
     }
 }
+
 
 
 .hero {
@@ -270,3 +286,16 @@ html {
     font-size: 28px;
 }
 
+/* .logo {
+    border: 2px solid black;
+} */
+
+
+
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
