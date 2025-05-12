@@ -27,14 +27,19 @@ body {
   .cta{
     height: fit-content;
   }
-  .cta .button{padding: 18px 28px;
+  .cta .button {
+    padding: 18px 28px;
     background: #316bff;
-    color: #fff; 
-    display:inline-block;
+    color: #fff;
+    display: flex;              
+    justify-content: center;   
+    align-items: center;      
     border-radius: 4px;
     width: 100px;
     height: 50px;
-  }
+    text-align: center;        
+}
+
   .button{padding: 18px 28px;
     background: #316bff;
     color: #fff; 
