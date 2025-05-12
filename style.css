@@ -62,14 +62,17 @@ body {
       top:0;
       left: 50%;
       transform: translateX(-50%);
-      padding: 20px;
-      background-image: url('savana.jpg');
+       padding: 20px;
+      /* background-image: url('savana.jpg') ; */
+      background:linear-gradient(to bottom, #ec8406ed, #f1ed78);
       display: flex;
       z-index: 100;
       height: 100px;
       align-items: center;
-      
+      font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+
   }
+
   .logo {
       flex-shrink: 0; /* Impedisce al logo di ridursi */
       display: flex;
@@ -141,6 +144,8 @@ body {
   .hero__content{
      
       position: relative;
+      font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+
       z-index: 2;
   }
     
@@ -183,11 +188,13 @@ body {
   .poster__content {
     width: 50%;
     padding: 40px;
-    text-align: left;
+    text-align: center;
     opacity: 0;
     transform: translateX(-30px);
     animation: fadeSlideInLeft 1s ease-out forwards;
     animation-delay: 0.3s;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+
   }
   
   /* Colonna destra: immagine */
@@ -263,7 +270,8 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 10px;
+
   }
   
   .goals-image-box {
@@ -295,7 +303,8 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    border-radius: 15px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+
   
   }
   
@@ -378,7 +387,8 @@ body {
     text-transform: uppercase; /* Trasforma il testo in maiuscolo */
     letter-spacing: 2px; /* Distanza tra le lettere */
     margin-bottom: 20px; /* Distanza sotto il titolo */
-    font-family: 'Arial', sans-serif;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+
   }
   
   .biomi-description p {
@@ -415,7 +425,7 @@ body {
   
   /* ! carousel*/
   
-  .main-carousel{padding: 40px 0;}
+  .main-carousel{padding: 10px 20px;}
   
   .carousel-cell{
     height: 350px;
@@ -424,43 +434,41 @@ body {
     line-height: 350px;
     text-align: center;
     margin-right: 30px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 0;
+    transition: transform 0.3s ease;
 
 
-}
+  }
   .carousel-cell:hover {
-    transform: scale(1.2) ;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(1.3) ;
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
   }
   
   .img-savana {
           background-image: url('savana.jpg');
           background-size: cover;
           background-position: center;
-          z-index: 1;
+         
   }
 
   .img-deserto {
     background-image: url('deserto.jpg');
     background-size: cover;
     background-position: center;
-    z-index: 1;
+  
   }
 
 .img-macchia {
     background-image: url('macchia.jpg');
     background-size: cover;
     background-position: center;
-    z-index: 1;
+  
  }
 
  .img-alpino {
     background-image: url('alpino.jpg');
     background-size: cover;
     background-position: center;
-    z-index: 1;
+    
  }
 
 
@@ -468,14 +476,42 @@ body {
     background-image: url('gungla.jpeg');
     background-size: cover;
     background-position: center;
-    z-index: 1;
+    
  }
 
  .img-foresta a {
     color: white;
-    font-size: 40px; /* Colore personalizzato per il link con la classe img-alpino */
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
   }
-  
+
+  .img-alpino a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+  .img-macchia a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+  .img-savana a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+  .img-deserto a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+
+/* footer */
+
  .footer {
     display: flex;
     align-items: center;
