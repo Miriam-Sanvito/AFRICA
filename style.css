@@ -405,6 +405,7 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra sottile per profondità */
     max-width: 800px; /* Limita la larghezza del contenitore */
     margin: 0 auto; /* Centra il contenitore orizzontalmente */
+    scroll-margin-top: 120px;
   }
   
   .biomi-title h3 {
