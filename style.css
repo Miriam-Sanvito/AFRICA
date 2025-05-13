@@ -76,7 +76,7 @@ body {
       height: 100px;
       align-items: center;
       font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
-
+      border-bottom: 3px solid darkred;
   }
 
   .logo {
