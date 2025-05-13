@@ -1,5 +1,6 @@
 
 body {
+    /* padding-top: 100px; */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -12,7 +13,7 @@ body {
 
 h1, h2, h3, h4, h5, p {
     color: #000;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 p {
@@ -155,7 +156,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.9));
+    background: linear-gradient(0deg, rgba(207, 17, 17, 0.05), rgba(0, 0, 0, 0.9));
     z-index: 1;
 }
 
@@ -168,7 +169,7 @@ p {
     align-items: center;
     height: 100%;
     text-align: center;
-    color: #decece;
+    color: #b90808;
 }
 
 .hero__content h1 {
@@ -181,21 +182,9 @@ p {
     font-weight: bold;
 }
 
-.poster__content {
-    width: 50%;
-    padding: 40px;
-    text-align: left;
-    opacity: 0;
-    transform: translateX(-30px);
-    animation: fadeSlideInLeft 1s ease-out forwards;
-    animation-delay: 0.3s;
-  }
-  
-  /* Colonna destra: immagine */
-/* Sezione Piante */
 .poster {
     display: flex;
-    flex-direction: row; /* Layout orizzontale */
+    flex-direction: row; 
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -264,8 +253,6 @@ p {
 .indice a {
     display: block;
     padding: 12px 20px;
-    background-color: #eaeaea;
-    color: #333;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
@@ -273,12 +260,45 @@ p {
 }
 
 .indice a:hover {
-    background-color: #dcdcdc;
     transform: scale(1.05);
 }
 
+.btn-piante {
+    background-color: #4CAF50; 
+    color: white;
+  }
+  .btn-piante:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-animali {
+    background-color: #e67e22; 
+    color: white;
+  }
+  .btn-animali:hover {
+    background-color: #cf711c;
+  }
+  
+  .btn-clima {
+    background-color: #3498db; 
+    color: white;
+  }
+  .btn-clima:hover {
+    background-color: #2d80b3;
+  }
+  
+  .btn-esempi {
+    background-color: #9b59b6; 
+    color: white;
+  }
+  .btn-esempi:hover {
+    background-color: #884ea0;
+  }
+  
+
 /* Sezioni principali */
 main section {
+    scroll-margin-top: 120px;
     background-color: #fff;
     padding: 30px 20px;
     border: 1px solid #ddd;
@@ -365,23 +385,48 @@ html {
     border-radius: 6px;            
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 28px;
 }
+
+#piante .section-title {
+    background-color: #4CAF50; 
+    border-left-color: #4CAF50;
+    color: white;
+  }
+  
+  #animali .section-title {
+    background-color: #e67e22; 
+    border-left-color: #e67e22;
+    color: white;
+  }
+  
+  #clima .section-title {
+    background-color: #3498db; 
+    border-left-color: #3498db;
+    color: white;
+  }
+  
+  #esempi .section-title {
+    background-color: #9b59b6; 
+    border-left-color: #9b59b6;
+    color: white;
+  }
+  
 
 /* .logo {
     border: 2px solid black;
 } */
 .poster {
     display: flex;
-    flex-direction: row; /* 👉 imposta layout orizzontale */
+    flex-direction: row; 
     height: 100vh;
     width: 100%;
     align-items: center;
     color: #fff;
     gap: 40px;
-    padding: 40px;
-    flex-wrap: nowrap; /* 👉 evita che vadano sotto */
+    padding: 20px 40px 40px 40px;
+    flex-wrap: nowrap; 
   }
   
   /* Colonna sinistra: testo */
