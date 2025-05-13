@@ -1,6 +1,6 @@
 /* ! base style */
-/* body,
-html{padding: 0; margin: 0;} */
+ body,
+html{padding: 0; margin: 0;} 
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
