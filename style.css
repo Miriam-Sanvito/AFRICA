@@ -29,7 +29,7 @@ body {
   }
   .cta .button {
     padding: 18px 28px;
-    background: #316bff;
+    background: darkred;
     color: #fff;
     display: flex;              
     justify-content: center;   
@@ -41,7 +41,7 @@ body {
 }
 
   .button{padding: 18px 28px;
-    background: #316bff;
+    background: darkred;
     color: #fff; 
     display:inline-block;
     border-radius: 4px;
@@ -70,6 +70,7 @@ body {
        padding: 20px;
       /* background-image: url('savana.jpg') ; */
       background:linear-gradient(to bottom, #ec8406ed, #f1ed78);
+      /* border: 4px solid #000000; */
       display: flex;
       z-index: 100;
       height: 100px;
@@ -79,10 +80,10 @@ body {
   }
 
   .logo {
-      flex-shrink: 0; /* Impedisce al logo di ridursi */
+      /* flex-shrink: 0; Impedisce al logo di ridursi */
       display: flex;
       align-items: center;
-      margin-right: 30px;
+      margin-right: 50px;
       /* border: 2px solid black; */
   }
   
@@ -92,7 +93,13 @@ body {
       width: 100%;  
   }
   .menu li{display: inline-block}
-  .menu li a{color:white;padding: 15px;display: block;}
+  .menu li a{color:white;padding: 15px;display: block;font-size: 20px;}
+  .menu li a:hover{
+    color: darkred; /* Cambia il colore al passaggio del mouse */
+    cursor: pointer; /* Cambia il cursore */
+    transition: color 0.3s ease; /* Aggiunge una transizione dolce */
+  }
+  
   
   .hamburger{display: none;}
   
@@ -199,6 +206,14 @@ body {
     animation: fadeSlideInLeft 1s ease-out forwards;
     animation-delay: 0.3s;
     font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+    transition: transform 0.4s ease;
+  }
+
+  .poster__content:hover{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+    transform: scale(1.05);
+    border-radius: 15px;
 
   }
   
@@ -343,6 +358,13 @@ body {
     background:linear-gradient(to bottom, #f6f64c, #f1ed78);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Leggera ombra */
   }
+
+  .goal-text-box:hover {
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+    transform: scale(1.05);
+  }
   
   /* Responsive */
   @media (max-width: 768px) {
@@ -430,7 +452,7 @@ body {
   
   /* ! carousel*/
   
-  .main-carousel{padding: 10px 20px;}
+  .main-carousel{padding: 0px 20px 30px 20px;}
   
   .carousel-cell{
     height: 350px;
@@ -521,13 +543,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #222;
+    background: linear-gradient(to right, 
+    #908d8d 0%, 
+    #888888 25%, 
+    #222222 50%, 
+    #888888 75%, 
+    #eeeeee 100%);
     color: white;
     padding: 20px;
   }
   
   .footer-image img {
-    height: 50px;
+    height: 85px;
+    width: 85px;
   }
   
   .footer-social {
