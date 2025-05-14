@@ -463,13 +463,17 @@ body {
     text-align: center;
     margin-right: 30px;
     transition: transform 0.3s ease;
+    display: inline-block;
+    overflow: visible;
 
 
   }
   .carousel-cell:hover {
-    transform: scale(1.3) ;
-     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.3);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
   }
+
+ 
   
   .img-savana {
           background-image: url('savana.jpg');
@@ -536,6 +540,7 @@ body {
     font-size: 40px;
     font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
   }
+
 
 
 /* footer */
