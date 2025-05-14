@@ -465,6 +465,91 @@ html {
   
   /* Colonna sinistra: testo */
 
+  .main-carousel{padding: 0px 20px 30px 20px;}
+  
+  .carousel-cell{
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+
+
+  }
+  .carousel-cell:hover {
+    transform: scale(1.3) ;
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .img-savana {
+          background-image: url('savana.jpg');
+          background-size: cover;
+          background-position: center;
+         
+  }
+
+  .img-deserto {
+    background-image: url('deserto.jpg');
+    background-size: cover;
+    background-position: center;
+  
+  }
+
+.img-macchia {
+    background-image: url('macchia.jpg');
+    background-size: cover;
+    background-position: center;
+  
+ }
+
+ .img-alpino {
+    background-image: url('alpino.jpg');
+    background-size: cover;
+    background-position: center;
+    
+ }
+
+
+ .img-foresta {
+    background-image: url('gungla.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+ }
+
+ .img-foresta a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+  .img-alpino a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+  .img-macchia a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+  .img-savana a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+  .img-deserto a {
+    color: white;
+    font-size: 40px;
+    font-family: "Georgia", "Times New Roman", serif;; /* Colore personalizzato per il link con la classe img-alpino */
+  }
+
+
 
 
 *,

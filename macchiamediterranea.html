@@ -1,15 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
     
-    <h1>macchia mediterranea</h1>
-    <a href="index.html">Home</a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="stile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    </head>
+<body>
 
+    <div class="header">
+        <div class="logo">
+            <img src="log.png" width="100" height="50" alt="">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="cta">
+            <a href="" class="button"> Contatti</a>
+        </div>
+    </div>
+    
+
+    <div class="hero hero-savana">
+        <div class="overlay"></div>
+        <div class="hero__content centra-contenuto">
+            <p class="intro-text">Baobab Buddies</p>
+            <h1 class="big-text">La Savana</h1>
+        </div>
+    </div>
+
+    <nav class="indice">
+        <ul>
+          <li><a href="#piante" class="btn-piante">Piante</a></li>
+          <li><a href="#animali" class="btn-animali">Animali</a></li>
+          <li><a href="#clima" class="btn-clima">Clima</a></li>
+          <li><a href="#esempi" class="btn-esempi">Esempi</a></li>
+        </ul>
+      </nav>
+      
+
+
+    <main class="container">
+        <section id="piante">
+            <h2 class="section-title">Piante</h2>
+          
+            
+            <div class="poster">
+              <div class="poster__content">
+                <p>Baobab: un simbolo iconico della savana...</p>
+              </div>
+              <div class="poster__img">
+                <div class="poster__img-box">
+                  <img src="baobab.jpg" alt="Baobab">
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="poster">
+              <div class="poster__content">
+                <p>Erbe alte: fondamentali per il pascolo...</p>
+              </div>
+              <div class="poster__img">
+                <div class="poster__img-box">
+                  <img src="erbe.jpg" alt="Erbe alte">
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="poster">
+              <div class="poster__content">
+                <p>Acacie spinose: protezione naturale...</p>
+              </div>
+              <div class="poster__img">
+                <div class="poster__img-box">
+                  <img src="acacia.jpg" alt="Acacia">
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="poster">
+              <div class="poster__content">
+                <p>Palme: presenti nelle savane più umide...</p>
+              </div>
+              <div class="poster__img">
+                <div class="poster__img-box">
+                  <img src="palme.jpg" alt="Palme">
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="poster">
+              <div class="poster__content">
+                <p>Arbusti resistenti alla siccità...</p>
+              </div>
+              <div class="poster__img">
+                <div class="poster__img-box">
+                  <img src="arbusti.jpg" alt="Arbusti">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+        <section id="animali">
+            <h2 class="section-title">Animali</h2>
+            <p>Specie animali tipiche della savana...</p>
+        </section>
+
+        <section id="clima">
+            <h2 class="section-title">Clima</h2>
+            <p>Informazioni sul clima della savana...</p>
+        </section>
+
+        <section id="esempi">
+            <h2 class="section-title">Esempi</h2>
+            <p>Esempi di regioni di savana nel mondo...</p>
+        </section>
+    </main>
+
+    <div class="main-carousel mt-1 " data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell img-savana"><a href="savana.html">SAVANA</a></div>
+        <div class="carousel-cell img-deserto"><a href="deserto.html">DESERTO</a></div>
+        <div class="carousel-cell img-foresta"><a href="foresta.html">FORESTA</a></div>
+        <div class="carousel-cell img-macchia"><a href="macchiamediterranea.html">MEDITERRANEO </a></div>
+        <div class="carousel-cell img-alpino"><a href="macchiamediterranea.html">ALPINO</a></div>
+      
+    </div>
+
+    <footer class="footer">
+      <!-- Immagine sinistra -->
+      <div class="footer-image">
+        <img src="wwf.png" alt="Logo sinistra">
+      </div>
+    
+      <!-- Icone social con testo -->
+      <div class="footer-social">
+        <div class="social-item">
+          <a href="https://www.facebook.com/wwfitalia"><i class="fab fa-facebook-f"></i></a>
+          <span>Facebook</span>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/WWFitalia"><i class="fab fa-twitter"></i></a>
+          <span>Twitter</span>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/wwfitalia"><i class="fab fa-instagram"></i></a>
+          <span>Instagram</span>
+        </div>
+        <div class="social-item">
+          <a href="https://it.linkedin.com/company/wwf-italia"><i class="fab fa-linkedin-in"></i></a>
+          <span>LinkedIn</span>
+        </div>
+      </div>
+    
+      <!-- Immagine destra -->
+      <div class="footer-image">
+        <img src="wwf.png" alt="Logo destra">
+      </div>
+    </footer>
+
+ <!-- Includi jQuery (da CDN) -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 </html>
+
