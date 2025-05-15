@@ -265,6 +265,9 @@ p {
   color: #333; 
   padding: 0 10px;
 }
+.poster__content li{
+  text-align: center;
+}
 
 
 /* Mobile */
