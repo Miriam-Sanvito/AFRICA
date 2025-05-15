@@ -500,7 +500,7 @@ html {
   }
   
 
-.poster {
+.poster-piante{
     display: flex;
     flex-direction: row; 
     height: 100vh;
@@ -510,6 +510,7 @@ html {
     gap: 40px;
     padding: 20px 40px 40px 40px;
     flex-wrap: nowrap; 
+    background-color: lightpink;
   }
   
   /* Colonna sinistra: testo */
