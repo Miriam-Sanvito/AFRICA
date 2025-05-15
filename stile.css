@@ -302,11 +302,11 @@ p {
 }
 
 .btn-piante {
-    background-color: #4CAF50; 
+    background-color: #cfd203; 
     color: white;
   }
   .btn-piante:hover {
-    background-color: #45a049;
+    background-color: #3e3f08e1;
   }
   
   .btn-animali {
@@ -318,27 +318,22 @@ p {
   }
   
   .btn-clima {
-    background-color: #3498db; 
+    background-color: #eb4040; 
     color: white;
   }
   .btn-clima:hover {
-    background-color: #2d80b3;
+    background-color: #7e1919;
   }
   
   .btn-esempi {
-    background-color: #9b59b6; 
+    background-color: #8f0606; 
     color: white;
   }
   .btn-esempi:hover {
-    background-color: #884ea0;
+    background-color: #450404;
   }
 
-.plant-title {
-  font-size: 24px;  
-  font-weight: 700;  
-  color: #2c6b2f;    
-  margin-bottom: 10px; 
-}
+
 
 
 main section {
@@ -461,13 +456,13 @@ html {
 .plant-title {
   font-size: 32px;
   font-weight: bold;
-  color: #4CAF50; 
+  color: #cfd203; 
   margin-bottom: 15px;
 }
 
 #piante .section-title {
-    background-color: #4CAF50; 
-    border-left-color: #4CAF50;
+    background-color: #cfd203; 
+    border-left-color: #cfd203;
     color: white;
   }
   
@@ -478,14 +473,14 @@ html {
   }
   
   #clima .section-title {
-    background-color: #3498db; 
-    border-left-color: #3498db;
+    background-color: #eb4040; 
+    border-left-color:#eb4040;
     color: white;
   }
   
   #esempi .section-title {
-    background-color: #9b59b6; 
-    border-left-color: #9b59b6;
+    background-color: #8f0606; 
+    border-left-color: #8f0606;
     color: white;
   }
   
