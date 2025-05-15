@@ -218,9 +218,13 @@ p {
     font-size: 18px;
     color: #333;
     line-height: 1.6;
+  
+    border: 3px solid white;
+    border-radius: 4px;
+    padding: 0px 0px 15px 0px;
 }
 .poster.reverse-order {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse ;
 }
 .poster__img {
     width: 50%;
@@ -256,6 +260,7 @@ p {
   font-size: 18px;
   line-height: 1.6;
   color: #333; 
+  padding: 0 10px;
 }
 
 
@@ -445,13 +450,16 @@ html {
 
 .section-title {
     background-color: #f2f2f2;      
-    padding: 15px 20px;             
+    padding: 15px 20px; 
+    width: 100%;            
     border-left: 5px solid #316bff; 
     border-radius: 6px;            
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     color: #333;
     margin-bottom: 0px;
+    margin-top: 0px;
     font-size: 28px;
+    border-bottom: 3px solid white;
 }
 .plant-title {
   font-size: 32px;
@@ -503,14 +511,67 @@ html {
 .poster-piante{
     display: flex;
     flex-direction: row; 
-    height: 100vh;
+    height: auto;
     width: 100%;
     align-items: center;
     color: #fff;
     gap: 40px;
     padding: 20px 40px 40px 40px;
     flex-wrap: nowrap; 
-    background-color: lightpink;
+     background-color: #f9fb8e; 
+     margin-bottom: 20px;
+  }
+  .poster-piante.reverse-order {
+    flex-direction: row-reverse;
+  }
+  .poster-esempi{
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    gap: 40px;
+    padding: 20px 40px 40px 40px;
+    flex-wrap: nowrap; 
+    background-color: #ef9292;
+  }
+  .poster-esempi.reverse-order {
+    flex-direction: row-reverse;
+  }
+
+  .poster-animali{
+    display: flex;
+    flex-direction: row; 
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    gap: 40px;
+    padding: 20px 40px 40px 40px;
+    flex-wrap: nowrap; 
+    background-color:  #f3ac6f;
+  }
+  .poster-animali.reverse-order {
+    flex-direction: row-reverse;
+  }
+  .poster-clima{
+    display: flex;
+    flex-direction: row; 
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    gap: 40px;
+    padding: 20px 40px 40px 40px;
+    flex-wrap: nowrap; 
+    background-color: #eda3a3;
+  }
+  .poster-clima.reverse-order {
+    flex-direction: row-reverse;
   }
   
   /* Colonna sinistra: testo */
