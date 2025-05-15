@@ -1,11 +1,12 @@
 
 body {
-    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     box-sizing: border-box;
+    font-family: "Georgia", "Times New Roman", serif;; 
+    background-color: rgb(238, 238, 159);
   }
   
   a{text-decoration: none;}
