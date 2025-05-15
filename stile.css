@@ -149,7 +149,6 @@ p {
     position: relative;
     height: 50vh;
     overflow: hidden;
-    background-image: url('sfondo1.jpeg'); 
     background-size: cover;
     background-position: center;
 }
