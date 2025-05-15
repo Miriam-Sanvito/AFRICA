@@ -537,28 +537,28 @@ html {
   }
   
   .img-savana {
-          background-image: url('savana.jpg');
+          background-image: url('immagini/savana.jpg');
           background-size: cover;
           background-position: center;
          
   }
 
   .img-deserto {
-    background-image: url('deserto.jpg');
+    background-image: url('immagini/deserto.jpg');
     background-size: cover;
     background-position: center;
   
   }
 
 .img-macchia {
-    background-image: url('macchia.jpg');
+    background-image: url('immagini/macchia.jpg');
     background-size: cover;
     background-position: center;
   
  }
 
  .img-alpino {
-    background-image: url('alpino.jpg');
+    background-image: url('immagini/alpino.jpg');
     background-size: cover;
     background-position: center;
     
@@ -566,7 +566,7 @@ html {
 
 
  .img-foresta {
-    background-image: url('gungla.jpeg');
+    background-image: url('immagini/gungla.jpeg');
     background-size: cover;
     background-position: center;
     
