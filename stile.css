@@ -226,6 +226,7 @@ p {
 .poster.reverse-order {
   flex-direction: row-reverse ;
 }
+
 .poster__img {
     width: 50%;
     display: flex;
@@ -660,6 +661,15 @@ html {
     font-family: "Georgia", "Times New Roman", serif;; 
   }
 
+  .poster-center {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .poster-center .poster__content {
+    width: 80%;
+  }
+  
 
 
 
