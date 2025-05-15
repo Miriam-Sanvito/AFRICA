@@ -1,15 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savana</title>
-    <link rel="stylesheet" href="stile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alpino</title>
+        <link rel="stylesheet" href="stile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="stile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    </head>
 <body>
 
     <div class="header">
@@ -50,25 +55,16 @@
             <h2 class="section-title">Piante</h2>
           
             
-            <section id="acacia">
-              <div class="poster">
-                <div class="poster__content">
-                  <h2 class="section-title">Acacia (Genere: Acacia)</h2>
-                  <p><strong>Nome scientifico:</strong> Acacia spp.</p>
-                  <p><strong>Famiglia:</strong> Fabaceae</p>
-                  <p><strong>Distribuzione:</strong> Diffusa in tutta l'Africa subsahariana, particolarmente nelle savane e nelle praterie.</p>
-                  <p><strong>Alimentazione:</strong> Le foglie giovani e i semi sono consumati da erbivori come giraffe e elefanti.</p>
-                  <p><strong>Curiosità:</strong> Alcune specie di acacia, come <em>Acacia drepanolobium</em>, hanno una relazione simbiotica con le formiche, che difendono l'albero dai predatori in cambio di rifugio e nettare.</p>
-                </div>
-                <div class="poster__img">
-                  <div class="poster__img-box img-savana">
-                    <a href="#">Scopri di più</a>
-                  </div>
+            <div class="poster">
+              <div class="poster__content">
+                <p>Baobab: un simbolo iconico della savana...</p>
+              </div>
+              <div class="poster__img">
+                <div class="poster__img-box">
+                  <img src="baobab.jpg" alt="Baobab">
                 </div>
               </div>
-            </section>
-            
-            
+            </div>
           
             
             <div class="poster">
@@ -77,7 +73,7 @@
               </div>
               <div class="poster__img">
                 <div class="poster__img-box">
-                  <img src="terminalia.jpg" alt="terminalia">
+                  <img src="erbe.jpg" alt="Erbe alte">
                 </div>
               </div>
             </div>
@@ -95,6 +91,29 @@
             </div>
           
             
+            <div class="poster">
+              <div class="poster__content">
+                <p>Palme: presenti nelle savane più umide...</p>
+              </div>
+              <div class="poster__img">
+                <div class="poster__img-box">
+                  <img src="palme.jpg" alt="Palme">
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="poster">
+              <div class="poster__content">
+                <p>Arbusti resistenti alla siccità...</p>
+              </div>
+              <div class="poster__img">
+                <div class="poster__img-box">
+                  <img src="arbusti.jpg" alt="Arbusti">
+                </div>
+              </div>
+            </div>
+          </section>
           
 
         <section id="animali">
@@ -112,6 +131,15 @@
             <p>Esempi di regioni di savana nel mondo...</p>
         </section>
     </main>
+
+    <div class="main-carousel mt-1 " data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell img-savana"><a href="savana.html">SAVANA</a></div>
+        <div class="carousel-cell img-deserto"><a href="deserto.html">DESERTO</a></div>
+        <div class="carousel-cell img-foresta"><a href="foresta.html">FORESTA</a></div>
+        <div class="carousel-cell img-macchia"><a href="macchiamediterranea.html">MEDITERRANEO </a></div>
+        <div class="carousel-cell img-alpino"><a href="macchiamediterranea.html">ALPINO</a></div>
+      
+    </div>
 
     <footer class="footer">
       <!-- Immagine sinistra -->
@@ -144,5 +172,10 @@
         <img src="immagini/wwf.png" alt="Logo destra">
       </div>
     </footer>
+
+ <!-- Includi jQuery (da CDN) -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 </html>
