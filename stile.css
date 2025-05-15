@@ -156,19 +156,19 @@ p {
     background-position: center;
 }
 .hero-macchia {
-  background-image: url("immagini/macchia.jpg"); /* Sostituisci con il tuo percorso */
+  background-image: url("immagini/macchia.jpg"); 
 }
 .hero-savana {
-  background-image: url("immagini/savana.jpg"); /* Sostituisci con il tuo percorso */
+  background-image: url("immagini/savana.jpg"); 
 }
 .hero-deserto {
-  background-image: url("immagini/deserto.jpg"); /* Sostituisci con il tuo percorso */
+  background-image: url("immagini/deserto.jpg"); 
 }
 .hero-foresta {
-  background-image: url("immagini/gungla.jpeg"); /* Sostituisci con il tuo percorso */
+  background-image: url("immagini/gungla.jpeg"); 
 }
 .hero-alpino {
-  background-image: url("immagini/alpino.jpg"); /* Sostituisci con il tuo percorso */
+  background-image: url("immagini/alpino.jpg"); 
 }
 .hero .overlay {
     position: absolute;

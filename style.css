@@ -157,7 +157,7 @@ body {
       z-index: 2;
   }
     
-  /* centra contenuti */
+
   .centra-contenuto{
       display: flex;
       flex-direction: column;
@@ -177,9 +177,9 @@ body {
   .hero__content h1,
   .hero__content p{color: #fff;}
   
-  /* ! poster */
 
-  /* Contenuto */
+
+ 
   .poster {
     display: flex;
     flex-direction: row; 
@@ -213,7 +213,7 @@ body {
 
   }
   
-  /* Colonna destra: immagine */
+ 
   .poster__img {
     width: 50%;
     display: flex;
@@ -384,7 +384,7 @@ body {
   }
   
   
-  /* ! grid sistem */
+ 
   
   .grid{display: flex;max-width: 1350px;padding: 0 30px;margin: 0 auto;}
   
@@ -429,7 +429,7 @@ body {
     transition: color 0.3s ease; 
   }
   
-  /* Animazione per la descrizione */
+
   .biomi-description p {
     opacity: 0;
     transform: translateY(20px);
