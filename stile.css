@@ -152,7 +152,21 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+.hero-macchia {
+  background-image: url("immagini/macchia.jpg"); /* Sostituisci con il tuo percorso */
+}
+.hero-savana {
+  background-image: url("immagini/savana.jpg"); /* Sostituisci con il tuo percorso */
+}
+.hero-deserto {
+  background-image: url("immagini/deserto.jpg"); /* Sostituisci con il tuo percorso */
+}
+.hero-foresta {
+  background-image: url("immagini/gungla.jpeg"); /* Sostituisci con il tuo percorso */
+}
+.hero-alpino {
+  background-image: url("immagini/alpino.jpg"); /* Sostituisci con il tuo percorso */
+}
 .hero .overlay {
     position: absolute;
     top: 0;
